@@ -106,7 +106,8 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 

@@ -222,6 +222,77 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-weight: bold;
+  font-style: normal; }
+
+.container {
+  padding: 20px 15px;
+  margin: 0 auto;
+  width: 1120px; }
+
+.container-fluid {
+  padding: 20px 0px;
+  margin: 0 auto;
+  width: 1120px; }
+
+.vertical-align-center {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-container-no-wrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-item-100 {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+
+.flex-item-70 {
+  -ms-flex: 0 0 70%;
+      flex: 0 0 70%; }
+
+.flex-item-50 {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%; }
+
+.flex-item-30 {
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%; }
+
+.flex-item-25 {
+  -ms-flex: 0 0 25%;
+      flex: 0 0 25%; }
+
+.text-center {
+  text-align: center; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.screen-reader {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -463,7 +534,10 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -553,6 +627,32 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.site-footer {
+  background-image: url("../../images/dark-wood@2x.png");
+  overflow: auto; }
+  .site-footer h2 {
+    color: #d99054;
+    font-size: 21px;
+    margin-top: 0px; }
+  .site-footer p {
+    color: #fff; }
+    .site-footer p a {
+      color: #fff;
+      text-decoration: none; }
+    .site-footer p .fa {
+      width: 20px; }
+  .site-footer .site-footer-items {
+    padding: 60px 0; }
+  .site-footer .footer-items:last-child {
+    text-align: right; }
+    .site-footer .footer-items:last-child img {
+      width: 300px; }
+  .site-footer .footer-copyright {
+    margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # Content

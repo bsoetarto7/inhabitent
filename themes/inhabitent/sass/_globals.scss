@@ -1,0 +1,64 @@
+// Base SCSS that sets up the html layout
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h5,h6{
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container{
+  padding: 20px 15px;
+  margin: 0 auto;
+  width: $container-width;
+}
+.container-fluid{
+  padding: 20px 0px;
+  margin: 0 auto;
+  width: $container-width;
+}
+.vertical-align-center{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.flex-container{
+  flex-wrap: wrap;
+  display: flex;
+}
+.flex-container-no-wrap{
+  flex-wrap: nowrap;
+  display: flex;
+}
+.flex-item-100{
+  flex: 0 0 100%;
+}
+.flex-item-70{
+  flex: 0 0 70%;
+}
+.flex-item-50{
+  flex: 0 0 50%;
+}
+.flex-item-30{
+  flex: 0 0 30%;
+}
+.flex-item-25{
+  flex: 0 0 25%;
+}
+.text-center{
+  text-align: center;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.screen-reader {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}

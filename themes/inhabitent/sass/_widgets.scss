@@ -15,3 +15,39 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.site-footer{
+	background-image: url('../../images/dark-wood@2x.png');
+	overflow: auto;
+	h2{
+		color:$color__orange-brand;
+		font-size: 21px;
+		margin-top: 0px; 
+	}
+	p{
+		color:$color__white-text;
+		a{
+			color:$color__white-text;
+			text-decoration: none;
+		}
+		.fa{
+			width: 20px;
+		}
+	}
+	.site-footer-items{
+		padding: 60px 0;
+	}
+
+	.footer-items:last-child{
+		text-align: right;
+		img{
+			width: 300px;
+		}
+	}
+	.footer-copyright{
+		margin-bottom: 0;
+	}
+}
