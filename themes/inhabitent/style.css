@@ -285,14 +285,6 @@ h1, h2, h3, h4, h5, h5, h6 {
 .text-uppercase {
   text-transform: uppercase; }
 
-.screen-reader {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -490,6 +482,20 @@ a {
     outline: 0; }
 
 /* Menus */
+.site-header {
+  border-bottom: 1px solid #a1a1a1;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .site-header .flex-container-no-wrap {
+    -ms-flex-align: center;
+        align-items: center; }
+  .site-header .container-fluid {
+    padding: 5px 0; }
+
+.site-branding img {
+  max-height: 30px; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -520,10 +526,12 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    text-transform: uppercase; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #248A83; }
 
 /* Small menu. */
 .menu-toggle,
