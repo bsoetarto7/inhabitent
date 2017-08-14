@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="entry-header custom-hero" style="background-image:url(<?php echo CFS()->get( 'about_header_image' ); ?>);">
+        <header class="entry-header custom-hero flex-container-no-wrap">
           <div class="container-fluid">
             <?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
           </div>

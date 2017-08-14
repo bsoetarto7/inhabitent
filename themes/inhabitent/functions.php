@@ -83,6 +83,7 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function inhabitent_scripts() {
+	wp_enqueue_style( 'tent-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 
 	wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/ba817c08d8.js',array(),'4.7.0', false);
