@@ -24,7 +24,7 @@
 				<div class="container-fluid flex-container-no-wrap">
 					<div class="site-branding flex-item-70">
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<img src=<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-tent.svg alt="">
+						<a href=<?php echo home_url() ?>><img src=<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-tent.svg alt="Inhabitent logo"></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation flex-item-30" role="navigation">

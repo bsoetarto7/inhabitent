@@ -26,10 +26,11 @@ a {
 
 /* Menus */
 .site-header{
-	border-bottom: 1px solid $color__light-grey-brand;
+	border-bottom: 1px solid $color__grey-border;
 	position: fixed;
 	width: 100%;
 	background-color: $color__white-header;
+	z-index: 10;
 	.flex-container-no-wrap{
 		align-items: center;
 	}

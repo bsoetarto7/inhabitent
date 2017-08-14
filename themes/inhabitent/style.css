@@ -232,12 +232,12 @@ h1, h2, h3, h4, h5, h5, h6 {
 .container {
   padding: 20px 15px;
   margin: 0 auto;
-  width: 1120px; }
+  max-width: 1120px; }
 
 .container-fluid {
   padding: 20px 0px;
   margin: 0 auto;
-  width: 1120px; }
+  max-width: 1120px; }
 
 .vertical-align-center {
   -ms-flex-align: center;
@@ -483,10 +483,11 @@ a {
 
 /* Menus */
 .site-header {
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #e1e1e1;
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10; }
   .site-header .flex-container-no-wrap {
     -ms-flex-align: center;
         align-items: center; }
@@ -636,31 +637,38 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-/*--------------------------------------------------------------
-# footer
---------------------------------------------------------------*/
-.site-footer {
-  background-image: url("../../images/dark-wood@2x.png");
-  overflow: auto; }
-  .site-footer h2 {
-    color: #d99054;
-    font-size: 21px;
-    margin-top: 0px; }
-  .site-footer p {
-    color: #fff; }
-    .site-footer p a {
-      color: #fff;
+.widget {
+  margin-bottom: 40px; }
+  .widget h2 {
+    text-transform: uppercase; }
+  .widget p {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+    .widget p .fa {
+      min-width: 30px;
+      line-height: 1.5; }
+    .widget p a {
+      color: #248A83;
       text-decoration: none; }
-    .site-footer p .fa {
-      width: 20px; }
-  .site-footer .site-footer-items {
-    padding: 60px 0; }
-  .site-footer .footer-items:last-child {
-    text-align: right; }
-    .site-footer .footer-items:last-child img {
-      width: 300px; }
-  .site-footer .footer-copyright {
-    margin-bottom: 0; }
+      .widget p a:hover {
+        text-decoration: underline; }
+    .widget p:last-child {
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .widget .day-of-week {
+    font-weight: 700; }
+  .widget ul {
+    margin: 0;
+    padding: 0; }
+    .widget ul li {
+      list-style: none; }
+      .widget ul li a {
+        color: #248A83;
+        text-decoration: none; }
+        .widget ul li a:hover {
+          text-decoration: underline; }
 
 /*--------------------------------------------------------------
 # Content
@@ -763,4 +771,91 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body .site-content {
+  overflow: auto;
+  padding-top: 48px; }
+
+body:not(.home) .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 1120px;
+  margin: 0 auto; }
+
+body .content-area {
+  padding: 40px 40px 0 0;
+  -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+  border-right: 1px solid #e1e1e1; }
+  body .content-area h2 {
+    font-size: 2.1rem; }
+
+body .widget-area {
+  -ms-flex: 0 0 30%;
+      flex: 0 0 30%;
+  padding: 40px 0 0 40px; }
+
+.blog .entry-header, .single-post .entry-header {
+  position: relative; }
+  .blog .entry-header img, .single-post .entry-header img {
+    width: 100%; }
+  .blog .entry-header .entry-title, .single-post .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    background-color: #248A83;
+    padding: 10px 20px;
+    margin-top: 40px;
+    max-width: 75%;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase; }
+    .blog .entry-header .entry-title a, .single-post .entry-header .entry-title a {
+      color: #fff;
+      text-decoration: none; }
+      .blog .entry-header .entry-title a:hover, .single-post .entry-header .entry-title a:hover {
+        color: #f0e4d1; }
+  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    background-color: #248A83;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px; }
+    .blog .entry-header .entry-meta a, .single-post .entry-header .entry-meta a {
+      color: #fff;
+      text-decoration: none; }
+      .blog .entry-header .entry-meta a:hover, .single-post .entry-header .entry-meta a:hover {
+        color: #f0e4d1; }
+
+.blog .post {
+  margin-bottom: 80px; }
+
 /* Front page */
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+.site-footer {
+  background-image: url("../../images/dark-wood@2x.png");
+  overflow: auto; }
+  .site-footer h2 {
+    color: #d99054;
+    font-size: 21px;
+    margin-top: 0px; }
+  .site-footer p {
+    color: #fff; }
+    .site-footer p a {
+      color: #fff;
+      text-decoration: none; }
+    .site-footer p .fa {
+      width: 20px; }
+  .site-footer .site-footer-items {
+    padding: 60px 0; }
+  .site-footer .footer-items:last-child {
+    text-align: right; }
+    .site-footer .footer-items:last-child img {
+      width: 300px; }
+  .site-footer .footer-copyright {
+    margin-bottom: 0; }
