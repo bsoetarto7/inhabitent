@@ -44,6 +44,7 @@ body{
       max-width: 75%;
       color:$color__white-text;
       text-transform: uppercase;
+      font-size: 2.1rem;
       a{
         color:$color__white-text;
         text-decoration: none;
@@ -61,11 +62,24 @@ body{
       text-transform: uppercase;
       color: $color__white-text;
       font-size: 14px;
+      font-family: $font__header;
       a{
         color: $color__white-text;
         text-decoration: none;
         &:hover{
           color: $color__yellow-brand;
+        }
+      }
+    }
+  }
+  .entry-footer{
+    span{
+      margin-right: 20px;
+      a{
+        color:$color__green-brand;
+        text-decoration: none;
+        &:hover{
+          color:$color__text-main;
         }
       }
     }

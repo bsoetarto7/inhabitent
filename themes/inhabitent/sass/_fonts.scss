@@ -50,3 +50,26 @@
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Novecento Sans';
+	src: url('../../fonts/Novecentosanswide-Normal.eot');
+	src: url('../../fonts/Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Novecentosanswide-Normal.woff2') format('woff2'),
+		url('../../fonts/Novecentosanswide-Normal.woff') format('woff'),
+		url('../../fonts/Novecentosanswide-Normal.ttf') format('truetype'),
+		url('../../fonts/Novecentosanswide-Normal.svg#.') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Novecento Sans';
+	src: url('../../fonts/Novecentosanswide-DemiBold.eot');
+	src: url('../../fonts/Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/Novecentosanswide-DemiBold.woff2') format('woff2'),
+		url('../../fonts/Novecentosanswide-DemiBold.woff') format('woff'),
+		url('../../fonts/Novecentosanswide-DemiBold.ttf') format('truetype'),
+		url('../../fonts/Novecentosanswide-DemiBold.svg#.') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
