@@ -868,11 +868,11 @@ body:not(.home):not(.page-template-about) .widget-area {
   padding: 40px 0 0 40px; }
 
 /* ---------- Journal Section ----------*/
-.blog .entry-header, .single-post .entry-header {
+.blog .entry-header, .single-post .entry-header, .archive .entry-header {
   position: relative; }
-  .blog .entry-header img, .single-post .entry-header img {
+  .blog .entry-header img, .single-post .entry-header img, .archive .entry-header img {
     width: 100%; }
-  .blog .entry-header .entry-title, .single-post .entry-header .entry-title {
+  .blog .entry-header .entry-title, .single-post .entry-header .entry-title, .archive .entry-header .entry-title {
     position: absolute;
     top: 0;
     background-color: #248A83;
@@ -881,7 +881,7 @@ body:not(.home):not(.page-template-about) .widget-area {
     max-width: 75%;
     color: #fff;
     font-size: 2.1rem; }
-  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta {
+  .blog .entry-header .entry-meta, .single-post .entry-header .entry-meta, .archive .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 8px;
@@ -890,19 +890,19 @@ body:not(.home):not(.page-template-about) .widget-area {
     text-transform: uppercase;
     color: #fff;
     font-family: "Novecento Sans", serif; }
-  .blog .entry-header a, .single-post .entry-header a {
+  .blog .entry-header a, .single-post .entry-header a, .archive .entry-header a {
     color: #fff;
     text-decoration: none; }
-    .blog .entry-header a:hover, .single-post .entry-header a:hover {
+    .blog .entry-header a:hover, .single-post .entry-header a:hover, .archive .entry-header a:hover {
       color: #f0e4d1; }
 
-.blog .entry-footer a, .single-post .entry-footer a {
+.blog .entry-footer a, .single-post .entry-footer a, .archive .entry-footer a {
   color: #248A83;
   text-decoration: none; }
-  .blog .entry-footer a:hover, .single-post .entry-footer a:hover {
+  .blog .entry-footer a:hover, .single-post .entry-footer a:hover, .archive .entry-footer a:hover {
     color: #404040; }
 
-.blog .entry-footer span, .single-post .entry-footer span {
+.blog .entry-footer span, .single-post .entry-footer span, .archive .entry-footer span {
   margin-right: 20px; }
 
 .blog .post {
