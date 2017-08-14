@@ -105,6 +105,9 @@ a {
 		display: block;
 		text-decoration: none;
 		color: $color__green-brand;
+		&:hover{
+			color:$color__text-main;
+		}
 	}
 
 	.current_page_item > a,
