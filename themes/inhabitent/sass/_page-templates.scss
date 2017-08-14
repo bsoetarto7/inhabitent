@@ -7,25 +7,41 @@ body{
     overflow: auto;
     padding-top: 48px;
   }
-  &:not(.home){
+  textarea,input{
+    background-color: $color__grey-textarea;
+    resize: none;
+  }
+  input[type=submit]{
+    background: $color__green-brand;
+    border: none;
+    border-radius: 0;
+    color: $color__white-text;
+    box-shadow: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-family: $font__header;
+  }
+  iframe{
+    width: 100%;
+  }
+  &:not(.home):not(.page-template-about){
     .site-content{
       display: flex;
       flex-wrap: nowrap;
       max-width: 1120px;
       margin: 0 auto;
     }
-  }
-  .content-area{
-    padding: 40px 40px 0 0;
-    flex: 0 0 70%;
-    border-right: 1px solid $color__grey-border;
-    h2{
-      font-size: 2.1rem;
+    .content-area{
+      padding: 40px 40px 0 0;
+      flex: 0 0 70%;
+      border-right: 1px solid $color__grey-border;
     }
-  }
-  .widget-area{
-    flex: 0 0 30%;
-    padding: 40px 0 0 40px;
+    .widget-area{
+      flex: 0 0 30%;
+      padding: 40px 0 0 40px;
+    }
   }
 }
 
@@ -43,15 +59,7 @@ body{
       margin-top: 40px;
       max-width: 75%;
       color:$color__white-text;
-      text-transform: uppercase;
       font-size: 2.1rem;
-      a{
-        color:$color__white-text;
-        text-decoration: none;
-        &:hover{
-          color: $color__yellow-brand;
-        }
-      }
     }
     .entry-meta{
       position: absolute;
@@ -61,30 +69,42 @@ body{
       padding: 5px 15px;
       text-transform: uppercase;
       color: $color__white-text;
-      font-size: 14px;
       font-family: $font__header;
-      a{
-        color: $color__white-text;
-        text-decoration: none;
-        &:hover{
-          color: $color__yellow-brand;
-        }
+    }
+    a{
+      color: $color__white-text;
+      text-decoration: none;
+      &:hover{
+        color: $color__yellow-brand;
       }
     }
   }
   .entry-footer{
+    a{
+      color:$color__green-brand;
+      text-decoration: none;
+      &:hover{
+        color:$color__text-main;
+      }
+    }
     span{
       margin-right: 20px;
-      a{
-        color:$color__green-brand;
-        text-decoration: none;
-        &:hover{
-          color:$color__text-main;
-        }
+    }
+  }
+  .comments-area{
+    label{
+      text-transform: uppercase;
+    }
+    a{
+      color:$color__green-brand;
+      text-decoration: none;
+      &:hover{
+        color:$color__text-main;
       }
     }
   }
 }
+
 .blog{
   .post{
     margin-bottom: 80px;
