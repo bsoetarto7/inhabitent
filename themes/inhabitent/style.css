@@ -860,7 +860,7 @@ body:not(.home):not(.page-template-about):not(.single-product) .site-content {
   margin: 0 auto; }
 
 body:not(.home):not(.page-template-about):not(.single-product) .content-area {
-  padding: 40px 40px 0 0;
+  padding: 40px 40px 40px 0;
   -ms-flex: 0 0 70%;
       flex: 0 0 70%; }
 
@@ -909,6 +909,17 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
 
 .blog .post {
   margin-bottom: 80px; }
+
+.home .home-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 /* ---------- About Section ----------*/
 .page-template-about .custom-hero {
@@ -993,6 +1004,14 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
     display: block; }
   .comments-area .comment-form-url input {
     width: 100%; }
+
+/* ---------- 404 Section ----------*/
+.error404 fieldset {
+  margin: 0 0 50px 0;
+  padding: 0;
+  border: none; }
+  .error404 fieldset button {
+    display: none; }
 
 /*--------------------------------------------------------------
 # footer

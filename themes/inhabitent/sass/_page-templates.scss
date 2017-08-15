@@ -36,7 +36,7 @@ body{
       margin: 0 auto;
     }
     .content-area{
-      padding: 40px 40px 0 0;
+      padding: 40px 40px 40px 0;
       flex: 0 0 70%;
     }
     .widget-area{
@@ -98,6 +98,16 @@ body{
 .blog{
   .post{
     margin-bottom: 80px;
+  }
+}
+.home{
+  .home-hero{
+    background: linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -191,6 +201,18 @@ body{
     }
     input{
       width: 100%;
+    }
+  }
+}
+
+/* ---------- 404 Section ----------*/
+.error404{
+  fieldset{
+    margin: 0 0 50px 0;
+    padding: 0;
+    border: none;
+    button{
+      display: none;
     }
   }
 }
