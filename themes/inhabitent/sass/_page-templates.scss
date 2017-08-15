@@ -66,7 +66,7 @@ body{
     .entry-meta{
       position: absolute;
       right: 0;
-      bottom: 8px;
+      bottom: 0;
       background-color: $color__green-brand;
       padding: 5px 15px;
       text-transform: uppercase;
@@ -100,6 +100,8 @@ body{
     margin-bottom: 80px;
   }
 }
+
+/* ---------- Home Section ----------*/
 .home{
   .home-hero{
     background: linear-gradient(rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -109,8 +111,43 @@ body{
     align-items: center;
     justify-content: center;
   }
-  .journal-post-item{
-    padding: 10px;
+  .home-product-terms{
+    .product-term-name{
+      text-align: center;
+      padding: 10px;
+      border:1px solid $color__grey-border;
+      border-top-width: 5px;
+      overflow: auto;
+      img{
+        max-width: 70px;
+        margin: 0 auto;
+      }
+      a{
+        background-color: $color__green-brand;
+        padding: 10px 15px;
+        display: inline-block;
+        color: $color__white-text;
+        text-decoration: none;
+        &:hover{
+          background-color: darken($color__green-brand,10%);
+        }
+      }
+      &:hover{
+        border-color: $color__orange-brand;
+        cursor: pointer;
+      }
+    }
+  }
+  .home-journal-post{
+    .journal-post-item{
+      padding: 0 15px;
+      img{
+        display: block;
+      }
+    }
+    .entry-header{
+      overflow: auto;
+    }
   }
 }
 
