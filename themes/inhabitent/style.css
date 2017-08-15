@@ -314,6 +314,10 @@ h1, h2, h3, h4, h5, h5, h6 {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%; }
 
+.flex-item-33 {
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%; }
+
 .flex-item-30 {
   -ms-flex: 0 0 30%;
       flex: 0 0 30%; }
@@ -920,6 +924,9 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
+
+.home .journal-post-item {
+  padding: 10px; }
 
 /* ---------- About Section ----------*/
 .page-template-about .custom-hero {
