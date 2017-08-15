@@ -75,3 +75,19 @@ function inhabitent_dynamic_css() {
 	wp_add_inline_style( 'tent-style', $hero_css );
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css' );
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+	global $post;
+return '<span>[...]</span><a class="moretag" href="'. get_permalink($post->ID) . '">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function my_theme_archive_title( $title ) {
+	if ( is_post_type_archive() ) {
+			$title = 'Shop Stuff';
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );

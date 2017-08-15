@@ -24,7 +24,7 @@ get_header(); ?>
 						<div class="product-term-name">
 							<img src=<?php echo get_stylesheet_directory_uri() . '/images/' . strtolower($product_type->name) .'.svg' ; ?> alt="<?php echo $product_type->name . ' category icon' ?>">
 							<p><?php echo $product_type->description ?></p>
-							<a href=''><?php echo $product_type->name . ' Stuff' ?></a>
+							<a class="text-uppercase" href=''><?php echo $product_type->name . ' Stuff' ?></a>
 						</div>
 					</div>
 					<?php endforeach; wp_reset_postdata(); ?>
