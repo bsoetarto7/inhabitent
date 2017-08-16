@@ -117,14 +117,14 @@ body{
     .flex-container-no-wrap{
       max-width: 400px;
       margin: 0 auto;
-      a{
-        color:$color__green-brand;
-        text-decoration: none;
-        font-family: $font__header;
-        font-size: 1.2rem;
-        &:hover{
-          color:$color__text-main;
-        }
+    }
+    a{
+      color:$color__green-brand;
+      text-decoration: none;
+      font-family: $font__header;
+      font-size: 1.2rem;
+      &:hover{
+        color:$color__text-main;
       }
     }
   }
@@ -134,11 +134,15 @@ body{
   .product-thumbnail{
     overflow: hidden;
     height: 250px;
+    position: relative;
     img{
+      position: absolute;
+      top: 50%;
+      right:50%;
       max-height: 250px;
       width: auto;
       max-width: none;
-      transform: translate(-20%,0);
+      transform: translate(50%,-50%);
     }
   }
   .product-title-section{
