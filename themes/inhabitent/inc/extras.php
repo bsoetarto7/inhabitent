@@ -84,8 +84,10 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 function my_theme_archive_title( $title ) {
-	if ( is_post_type_archive() ) {
+	if ( is_post_type_archive('product') ) {
 			$title = 'Shop Stuff';
+	}elseif(is_post_type_archive('adventure')){
+		$title = 'Adventures';
 	}
 	return $title;
 }

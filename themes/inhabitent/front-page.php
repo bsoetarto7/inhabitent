@@ -75,7 +75,7 @@ get_header(); ?>
 									<div class="entry-title">
 										<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 									</div>
-									<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read entry</a>
+									<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read more</a>
 								</div>
 							</div>
 						</div>
