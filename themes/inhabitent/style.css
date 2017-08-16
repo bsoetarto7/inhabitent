@@ -927,6 +927,7 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
 .blog .post {
   margin-bottom: 80px; }
 
+/* ---------- Shop Section ----------*/
 .post-type-archive-product .content-area {
   padding: 40px 0; }
 
@@ -997,6 +998,13 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.home .home-product-terms, .home .home-journal-post {
+  padding: 40px 0; }
+  .home .home-product-terms h2, .home .home-journal-post h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 60px; }
+
 .home .home-product-terms .product-term-name {
   text-align: center;
   padding: 10px;
@@ -1018,13 +1026,50 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
     border-color: #d99054;
     cursor: pointer; }
 
-.home .home-journal-post .journal-post-item {
-  padding: 0 15px; }
-  .home .home-journal-post .journal-post-item img {
-    display: block; }
+.home .home-journal-post h3 {
+  margin: 10px 0 30px 0; }
+  .home .home-journal-post h3 a {
+    color: #248A83;
+    text-decoration: none;
+    font-family: "Novecento Sans", serif;
+    font-size: 1.4rem; }
+    .home .home-journal-post h3 a:hover {
+      color: #404040; }
+
+.home .home-journal-post .journal-thumbnail {
+  position: relative;
+  height: 250px;
+  overflow: hidden; }
+  .home .home-journal-post .journal-thumbnail img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    max-width: none;
+    max-height: 250px;
+    width: auto;
+    transform: translate(50%, -50%); }
 
 .home .home-journal-post .entry-header {
-  overflow: auto; }
+  overflow: auto;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 20px; }
+  .home .home-journal-post .entry-header .entry-meta p {
+    margin: 0 0 10px 0; }
+
+.home .home-journal-post .entry-button {
+  color: #404040;
+  text-decoration: none;
+  font-family: "Novecento Sans", serif;
+  font-size: 1rem;
+  padding: 5px 20px;
+  font-weight: 400;
+  border: 1px solid black;
+  display: inline-block; }
+  .home .home-journal-post .entry-button:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: none; }
 
 /* ---------- About Section ----------*/
 .page-template-about .custom-hero {

@@ -50,9 +50,9 @@ get_header(); ?>
 									<p><?php inhabitent_posted_on(); ?> / <?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?></p> 
 								</div>
 								<div class="entry-title">
-									<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+									<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 								</div>
-								<a href=<?php echo get_post_permalink() ?>>Read More</a>
+								<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read entry</a>
 							</header>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>

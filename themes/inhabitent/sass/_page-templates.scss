@@ -102,6 +102,8 @@ body{
     margin-bottom: 80px;
   }
 }
+
+/* ---------- Shop Section ----------*/
 .post-type-archive-product{
   .content-area{
     padding: 40px 0;
@@ -170,6 +172,7 @@ body{
     }
   }
 }
+
 /* ---------- Home Section ----------*/
 .home{
   .home-hero{
@@ -179,6 +182,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .home-product-terms,.home-journal-post{
+    padding: 40px 0;
+    h2{
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 60px;
+    }
   }
   .home-product-terms{
     .product-term-name{
@@ -208,14 +219,57 @@ body{
     }
   }
   .home-journal-post{
-    .journal-post-item{
-      padding: 0 15px;
+    h3{
+      margin: 10px 0 30px 0;
+      a{
+        color:$color__green-brand;
+        text-decoration: none;
+        font-family: $font__header;
+        font-size: 1.4rem;
+        &:hover{
+          color:$color__text-main;
+        }
+      }
+    }
+    .journal-thumbnail{
+      position: relative;
+      height: 250px;
+      overflow: hidden;
       img{
-        display: block;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        max-width: none;
+        max-height: 250px;
+        width: auto;
+        transform: translate(50%,-50%);
       }
     }
     .entry-header{
       overflow: auto;
+      border: 1px solid $color__grey-border;
+      border-top-width: 5px;
+      padding: 20px;
+      .entry-meta{
+        p{
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+    .entry-button{
+      color:$color__text-main;
+      text-decoration: none;
+      font-family: $font__header;
+      font-size: 1rem;
+      padding: 5px 20px;
+      font-weight: 400;
+      border: 1px solid black;
+      display: inline-block;
+      &:hover{
+        background-color: $color__green-brand;
+        color: $color__white-text;
+        border: none;
+      }
     }
   }
 }
