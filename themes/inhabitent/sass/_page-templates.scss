@@ -27,7 +27,7 @@ body{
     width: 100%;
     height: 300px;
   }
-  &:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure){
+  &:not(.home):not(.page-template-about):not(.single-product):not(.single-adventure):not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure){
     .site-content{
       display: flex;
       flex-wrap: nowrap;
@@ -448,6 +448,21 @@ body{
         height: 262.5px;
       }      
     }
+    .adventure-button{
+      color:$color__white-text;
+      text-decoration: none;
+      font-family: $font__header;
+      font-size: 1.3rem;
+      padding: 5px 20px;
+      margin-top: 20px;
+      font-weight: 400;
+      display: inline-block;
+      background-color: $color__green-brand;
+      &:hover{
+        background-color: darken($color__green-brand,10%);
+        color: $color__white-text;
+      }
+    }
   }
 }
 
@@ -473,7 +488,25 @@ body{
     font-size: 32px;
   }
 }
-
+.single-adventure{
+  .entry-hero{
+    height: 100vh;
+    img{
+      object-fit: cover;
+      height: 100vh;
+    }
+  }
+  .entry{
+    max-width: 800px;
+    margin: 60px auto;
+  }
+  .entry-meta{
+    p{
+      font-family: $font__header;
+      font-size: 1.2rem;
+    }
+  }
+}
 /* ---------- Single product Section ----------*/
 .single-product{
   .site-content{

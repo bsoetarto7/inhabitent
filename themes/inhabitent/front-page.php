@@ -81,7 +81,7 @@ get_header(); ?>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-				<a href=""></a>
+				<a href=<?php echo home_url().'/adventure' ?> class="adventure-button text-uppercase">more adventure</a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
