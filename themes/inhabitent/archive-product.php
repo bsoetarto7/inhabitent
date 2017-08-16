@@ -9,43 +9,43 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<?php query_posts( array( 'post_type' =>'product', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
+		<?php
+			$args = array( 'post_type' => 'product');
 
+			$product_types = get_terms( $args ); // returns an array of posts
+		?>
 		<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title text-center">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+				<div class="flex-container-no-wrap">
+				<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
+					<div class="flex-item-25 text-center">
+						<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
+					</div>
+				<?php endforeach; wp_reset_postdata(); ?>
+				</div>
 			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
+			<section class="flex-container">
 			<?php while ( have_posts() ) : the_post(); ?>
-
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="entry-header ">
+        <div class="flex-item-25">
           <?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail( 'large' ); ?>
-          <?php endif; ?>
-
-          <?php the_title( sprintf( '<h2 class="entry-title text-center"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-          <?php if ( 'post' === get_post_type() ) : ?>
-          <div class="entry-meta">
-            <?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
-          </div><!-- .entry-meta -->
-          <?php endif; ?>
-        </header><!-- .entry-header -->
-      </article><!-- #post-## -->
-
+					<a href=<?php echo get_post_permalink() ?>><div class="product-thumbnail"><?php the_post_thumbnail( 'large' ); ?></div></a>
+					<?php endif; ?>
+					<div class="product-title-section">
+						<h2 class="entry-title">
+							<span><?php the_title(); ?></span> 
+							<span>..................................................</span>
+							<span><?php echo CFS()->get( 'price' ); ?></span>
+						</h2>
+					</div>
+					
+				</div>
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+			</section>
 		<?php endif; ?>
 
 		</main><!-- #main -->
