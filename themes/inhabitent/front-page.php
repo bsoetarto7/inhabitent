@@ -58,6 +58,31 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
 			</section>
+			<section class="container-fluid home-adventure-post">
+				<h2 class="text-uppercase text-center">latest adventures</h2>
+				<?php
+					$args = array( 'post_type' => 'adventure', 'orderby' => 'date', 'order' => 'ASC', 'numberposts' => '4' );
+					$adventure_posts = get_posts( $args ); // returns an array of posts
+				?>
+				<div class="journal-grid-container">
+					<?php foreach ( $adventure_posts as $post ) : setup_postdata( $post ); ?>
+						<div id="post-<?php the_ID(); ?>" <?php post_class();?>>
+							<div class="adventure-thumbnail">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'full' ); ?>
+								<?php endif; ?>
+								<div class="journal-header">
+									<div class="entry-title">
+										<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+									</div>
+									<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read entry</a>
+								</div>
+							</div>
+						</div>
+					<?php endforeach; wp_reset_postdata(); ?>
+				</div>
+				<a href=""></a>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

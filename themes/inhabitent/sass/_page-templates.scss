@@ -222,7 +222,7 @@ body{
     align-items: center;
     justify-content: center;
   }
-  .home-product-terms,.home-journal-post{
+  .home-product-terms,.home-journal-post,.home-adventure-post{
     padding: 40px 0;
     h2{
       font-size: 2.5rem;
@@ -310,6 +310,100 @@ body{
         color: $color__white-text;
         border: 1px solid $color__green-brand;
       }
+    }
+  }
+  .home-adventure-post{
+    .journal-grid-container{
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .adventure{
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      img{
+        filter: brightness(60%);
+      }
+    }
+    .adventure-thumbnail{
+      position: relative;
+      a{
+        color:$color__white-text;
+        text-decoration: none;
+        font-family: $font__header;
+        &:hover{
+          color:$color__orange-brand;
+        }
+      }
+      .entry-button{
+        color:$color__white-text;
+        text-decoration: none;
+        font-family: $font__header;
+        font-size: 1rem;
+        padding: 5px 20px;
+        font-weight: 400;
+        border: 1px solid white;
+        display: inline-block;
+        &:hover{
+          background-color: $color__green-brand;
+          color: $color__white-text;
+          border: 1px solid $color__green-brand;
+        }
+      }
+    }
+    .journal-header{
+      position: absolute;
+      top:0;
+      left: 0;
+      padding: 20px;
+    }
+    .adventure:nth-child(1){
+      grid-row-start: span 2;
+      height: 540px;
+      margin-right: 15px;
+      h3{
+        font-size:2.5rem;
+      }
+      img{
+        object-fit: cover;
+        height: 540px;
+        
+      }
+    }
+    .adventure:nth-child(2){
+      grid-column-start: span 2; 
+      grid-row-start: span 1;
+      height: 262.5px;
+      margin-bottom: 15px;
+      h3{
+        font-size:2.2rem;
+      }
+      img{
+        object-fit: cover;
+        height: 262.5px;
+      }   
+    }
+    .adventure:nth-child(3){
+      height: 262.5px;
+      margin-right: 15px;
+      h3{
+        font-size:1.5rem;
+      }
+      img{
+        object-fit: cover;
+        height: 262.5px;
+      }      
+    }
+    .adventure:nth-child(4){
+      height: 262.5px;
+      h3{
+        font-size:1.5rem;
+      }
+      img{
+        object-fit: cover;
+        height: 262.5px;
+      }      
     }
   }
 }
