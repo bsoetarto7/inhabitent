@@ -41,7 +41,7 @@ function inhabitent_tax_product_type() {
       'show_tagcloud'              => true,
       'show_in_rest'               => true,
     );
-    register_taxonomy( 'product', array( 'product' ), $args );
+    register_taxonomy( 'product-type', array( 'product' ), $args );
     
     // Flush permalink rewrite rules
     flush_rewrite_rules();

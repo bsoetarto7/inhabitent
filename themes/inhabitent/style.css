@@ -867,7 +867,7 @@ body iframe {
   width: 100%;
   height: 300px; }
 
-body:not(.home):not(.page-template-about):not(.single-product) .site-content {
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive-product):not(.tax-product-type) .site-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
@@ -876,22 +876,22 @@ body:not(.home):not(.page-template-about):not(.single-product) .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
-body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive-product):not(.tax-product-type) .widget-area {
   -ms-flex: 0 0 30%;
       flex: 0 0 30%;
   border-left: 1px solid #e1e1e1; }
 
 /* ---------- Journal Section ----------*/
-.blog:not(.post-type-archive-product) .content-area, .single-post:not(.post-type-archive-product) .content-area, .archive:not(.post-type-archive-product) .content-area, .error404:not(.post-type-archive-product) .content-area {
+.blog:not(.post-type-archive-product):not(.tax-product-type) .content-area, .single-post:not(.post-type-archive-product):not(.tax-product-type) .content-area, .archive:not(.post-type-archive-product):not(.tax-product-type) .content-area, .error404:not(.post-type-archive-product):not(.tax-product-type) .content-area {
   padding: 40px 40px 40px 0;
   -ms-flex: 0 0 70%;
       flex: 0 0 70%; }
 
-.blog:not(.post-type-archive-product) .entry-header, .single-post:not(.post-type-archive-product) .entry-header, .archive:not(.post-type-archive-product) .entry-header, .error404:not(.post-type-archive-product) .entry-header {
+.blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header {
   position: relative; }
-  .blog:not(.post-type-archive-product) .entry-header img, .single-post:not(.post-type-archive-product) .entry-header img, .archive:not(.post-type-archive-product) .entry-header img, .error404:not(.post-type-archive-product) .entry-header img {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header img, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header img, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header img, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header img {
     width: 100%; }
-  .blog:not(.post-type-archive-product) .entry-header .entry-title, .single-post:not(.post-type-archive-product) .entry-header .entry-title, .archive:not(.post-type-archive-product) .entry-header .entry-title, .error404:not(.post-type-archive-product) .entry-header .entry-title {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-title, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-title, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-title, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-title {
     position: absolute;
     top: 0;
     background-color: #248A83;
@@ -900,7 +900,7 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
     max-width: 75%;
     color: #fff;
     font-size: 2.1rem; }
-  .blog:not(.post-type-archive-product) .entry-header .entry-meta, .single-post:not(.post-type-archive-product) .entry-header .entry-meta, .archive:not(.post-type-archive-product) .entry-header .entry-meta, .error404:not(.post-type-archive-product) .entry-header .entry-meta {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-meta, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-meta, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-meta, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -909,13 +909,13 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
     text-transform: uppercase;
     color: #fff;
     font-family: "Novecento Sans", serif; }
-  .blog:not(.post-type-archive-product) .entry-header a, .single-post:not(.post-type-archive-product) .entry-header a, .archive:not(.post-type-archive-product) .entry-header a, .error404:not(.post-type-archive-product) .entry-header a {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header a, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header a, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header a, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header a {
     color: #fff;
     text-decoration: none; }
-    .blog:not(.post-type-archive-product) .entry-header a:hover, .single-post:not(.post-type-archive-product) .entry-header a:hover, .archive:not(.post-type-archive-product) .entry-header a:hover, .error404:not(.post-type-archive-product) .entry-header a:hover {
+    .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-header a:hover, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-header a:hover, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-header a:hover, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-header a:hover {
       color: #f0e4d1; }
 
-.blog:not(.post-type-archive-product) .entry-content a, .single-post:not(.post-type-archive-product) .entry-content a, .archive:not(.post-type-archive-product) .entry-content a, .error404:not(.post-type-archive-product) .entry-content a {
+.blog:not(.post-type-archive-product):not(.tax-product-type) .entry-content a, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-content a, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-content a, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-content a {
   display: inline-block;
   color: #404040;
   text-decoration: none;
@@ -925,18 +925,18 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
   padding: 5px 20px;
   font-weight: 400;
   border: 1px solid black; }
-  .blog:not(.post-type-archive-product) .entry-content a:hover, .single-post:not(.post-type-archive-product) .entry-content a:hover, .archive:not(.post-type-archive-product) .entry-content a:hover, .error404:not(.post-type-archive-product) .entry-content a:hover {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-content a:hover, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-content a:hover, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-content a:hover, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-content a:hover {
     background-color: #248A83;
     color: #fff;
     border: 1px solid #248A83; }
 
-.blog:not(.post-type-archive-product) .entry-footer a, .single-post:not(.post-type-archive-product) .entry-footer a, .archive:not(.post-type-archive-product) .entry-footer a, .error404:not(.post-type-archive-product) .entry-footer a {
+.blog:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a {
   color: #248A83;
   text-decoration: none; }
-  .blog:not(.post-type-archive-product) .entry-footer a:hover, .single-post:not(.post-type-archive-product) .entry-footer a:hover, .archive:not(.post-type-archive-product) .entry-footer a:hover, .error404:not(.post-type-archive-product) .entry-footer a:hover {
+  .blog:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a:hover, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a:hover, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a:hover, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-footer a:hover {
     color: #404040; }
 
-.blog:not(.post-type-archive-product) .entry-footer span, .single-post:not(.post-type-archive-product) .entry-footer span, .archive:not(.post-type-archive-product) .entry-footer span, .error404:not(.post-type-archive-product) .entry-footer span {
+.blog:not(.post-type-archive-product):not(.tax-product-type) .entry-footer span, .single-post:not(.post-type-archive-product):not(.tax-product-type) .entry-footer span, .archive:not(.post-type-archive-product):not(.tax-product-type) .entry-footer span, .error404:not(.post-type-archive-product):not(.tax-product-type) .entry-footer span {
   margin-right: 20px; }
 
 .blog .post, .archive .post {
@@ -953,35 +953,40 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
   margin-bottom: 40px; }
 
 /* ---------- Shop Section ----------*/
-.post-type-archive-product .content-area {
+.post-type-archive-product .site-content, .tax-product-type .site-content {
+  padding-top: 50px;
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.post-type-archive-product .content-area, .tax-product-type .content-area {
   padding: 40px 0; }
 
-.post-type-archive-product .page-header {
+.post-type-archive-product .page-header, .tax-product-type .page-header {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: dotted 2px #e1e1e1; }
-  .post-type-archive-product .page-header h1 {
+  .post-type-archive-product .page-header h1, .tax-product-type .page-header h1 {
     font-size: 2.3rem;
     margin-bottom: 30px; }
-  .post-type-archive-product .page-header .flex-container-no-wrap {
+  .post-type-archive-product .page-header .flex-container-no-wrap, .tax-product-type .page-header .flex-container-no-wrap {
     max-width: 400px;
     margin: 0 auto; }
-  .post-type-archive-product .page-header a {
+  .post-type-archive-product .page-header a, .tax-product-type .page-header a {
     color: #248A83;
     text-decoration: none;
     font-family: "Novecento Sans", serif;
     font-size: 1.2rem; }
-    .post-type-archive-product .page-header a:hover {
+    .post-type-archive-product .page-header a:hover, .tax-product-type .page-header a:hover {
       color: #404040; }
 
-.post-type-archive-product .flex-item-25 {
+.post-type-archive-product .flex-item-25, .tax-product-type .flex-item-25 {
   max-width: 25%; }
 
-.post-type-archive-product .product-thumbnail {
+.post-type-archive-product .product-thumbnail, .tax-product-type .product-thumbnail {
   overflow: hidden;
   height: 250px;
   position: relative; }
-  .post-type-archive-product .product-thumbnail img {
+  .post-type-archive-product .product-thumbnail img, .tax-product-type .product-thumbnail img {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -990,22 +995,22 @@ body:not(.home):not(.page-template-about):not(.single-product) .widget-area {
     max-width: none;
     transform: translate(50%, -50%); }
 
-.post-type-archive-product .product-title-section {
+.post-type-archive-product .product-title-section, .tax-product-type .product-title-section {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   margin-bottom: 40px;
   padding: 10px; }
-  .post-type-archive-product .product-title-section h2 {
+  .post-type-archive-product .product-title-section h2, .tax-product-type .product-title-section h2 {
     font-size: 16px;
     position: relative;
     text-align: center;
     font-weight: 300; }
-    .post-type-archive-product .product-title-section h2 span:first-child {
+    .post-type-archive-product .product-title-section h2 span:first-child, .tax-product-type .product-title-section h2 span:first-child {
       position: absolute;
       left: 0;
       background-color: #fff;
       padding-right: 2px; }
-    .post-type-archive-product .product-title-section h2 span:last-child {
+    .post-type-archive-product .product-title-section h2 span:last-child, .tax-product-type .product-title-section h2 span:last-child {
       position: absolute;
       right: 0;
       background-color: #fff;

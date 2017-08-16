@@ -15,7 +15,7 @@ get_header(); ?>
 			<section class="container-fluid home-product-terms">
 				<h2 class="text-uppercase text-center">shop stuff</h2>
 				<?php
-					$args = array( 'post_type' => 'product');
+					$args = array( 'post_type' => 'product-type');
 
 					$product_types = get_terms( $args ); // returns an array of posts
 				?>
