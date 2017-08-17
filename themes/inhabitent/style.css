@@ -635,7 +635,7 @@ a {
     .site-header .search-form input[type=search] {
       width: 0;
       border: none;
-      background-color: white;
+      background-color: transparent;
       transition: width 0.4s ease-in-out; }
     .site-header .search-form input[type=search]:focus {
       width: 200px;
