@@ -42,7 +42,7 @@ body{
   }
 }
 
-/* ---------- Journal Section ----------*/
+/* ---------- Journal, Single post, Archive and error404 Section ----------*/
 .blog,.single-post,.archive,.error404{
   &:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure){
     .content-area{
@@ -136,51 +136,8 @@ body{
     margin-bottom: 40px;
   }
 }
-.post-type-archive-adventure{
-  .adventure-journal{
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .journal-title{
-    position: absolute;
-    top:0;
-    left: 0;
-    overflow: auto;
-    padding: 40px;
-  }
-  img{
-    filter: brightness(60%);
-  }
-  h2{
-    margin: 10px 0 30px 0;
-    font-size: 2.5rem;
-    font-weight: 400;
-    a{
-      color:$color__white-text;
-      text-decoration: none;
-      font-family: $font__header;
-      &:hover{
-        color:$color__orange-brand;
-      }
-    }
-  }
-  .entry-button{
-    color:$color__white-text;
-    text-decoration: none;
-    font-family: $font__header;
-    font-size: 1rem;
-    padding: 5px 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    display: inline-block;
-    &:hover{
-      background-color: $color__green-brand;
-      color: $color__white-text;
-      border: 1px solid $color__green-brand;
-    }
-  }
-}
-/* ---------- Shop Section ----------*/
+
+/* ---------- Shop archive/taxanomy and Adventure archive Section ----------*/
 .post-type-archive-product,.tax-product-type,.post-type-archive-adventure{
   .site-content{
     padding-top: 50px;
@@ -251,6 +208,52 @@ body{
         background-color: $color__white-text;
         padding-left: 2px;
       }
+    }
+  }
+}
+
+/* ---------- Adventure archive/single Section ----------*/
+.post-type-archive-adventure{
+  .adventure-journal{
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .journal-title{
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow: auto;
+    padding: 40px;
+  }
+  img{
+    filter: brightness(60%);
+  }
+  h2{
+    margin: 10px 0 30px 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    a{
+      color:$color__white-text;
+      text-decoration: none;
+      font-family: $font__header;
+      &:hover{
+        color:$color__orange-brand;
+      }
+    }
+  }
+  .entry-button{
+    color:$color__white-text;
+    text-decoration: none;
+    font-family: $font__header;
+    font-size: 1rem;
+    padding: 5px 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    display: inline-block;
+    &:hover{
+      background-color: $color__green-brand;
+      color: $color__white-text;
+      border: 1px solid $color__green-brand;
     }
   }
 }
@@ -586,6 +589,48 @@ body{
     border: none;
     button{
       display: none;
+    }
+  }
+}
+
+.search{
+  .page-header{
+    overflow: auto;
+    border-bottom: 1px solid $color__grey-border;
+  }
+  .content-area{
+    padding: 40px 40px 40px 0;
+    flex: 0 0 70%;
+  }
+  .hentry{
+    margin: 40px 0;
+  }
+  .entry-title{  
+    font-size: 1.7rem;
+    a{
+      color: $color__green-brand;
+      text-decoration: none;
+      &:hover{
+        color: $color__purple-brand;
+      }
+    }
+  }
+  .entry-summary{
+    a{
+      display: inline-block;
+      color:$color__text-main;
+      text-decoration: none;
+      font-family: $font__header;
+      font-size: 1rem;
+      margin-top: 20px;
+      padding: 5px 20px;
+      font-weight: 400;
+      border: 1px solid black;
+      &:hover{
+        background-color: $color__green-brand;
+        color: $color__white-text;
+        border: 1px solid $color__green-brand;
+      }
     }
   }
 }
