@@ -19,7 +19,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
       
-      <div class="flex-container">
+      <section class="flex-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="flex-item-50">
           <div class="adventure-journal">
@@ -33,7 +33,7 @@ get_header(); ?>
           </div>
         </div>
 			<?php endwhile; ?>
-      </div>
+      </section>
 		<?php endif; ?>
 
 		</main><!-- #main -->

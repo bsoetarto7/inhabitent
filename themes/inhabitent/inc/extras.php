@@ -83,6 +83,7 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
+// Replaces title on the shop page and the adventures page
 function my_theme_archive_title( $title ) {
 	if ( is_post_type_archive('product') ) {
 			$title = 'Shop Stuff';
@@ -93,3 +94,12 @@ function my_theme_archive_title( $title ) {
 }
 
 add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
+// Increase the number of post to be shown
+function inhabitent_limit_archive_posts($query){
+	if ($query->is_archive) {
+		$query->set('posts_per_page', 20);
+	}
+    return $query;
+}
+add_filter('pre_get_posts', 'inhabitent_limit_archive_posts');

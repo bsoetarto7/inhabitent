@@ -316,9 +316,19 @@ h1, h2, h3, h4, h5, h5, h6 {
       flex: 0 0 70%;
   padding: 0 15px; }
 
+.flex-item-60 {
+  -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+  padding: 0 15px; }
+
 .flex-item-50 {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%;
+  padding: 0 15px; }
+
+.flex-item-40 {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
   padding: 0 15px; }
 
 .flex-item-33 {
@@ -545,24 +555,11 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/* Menus */
-.site-header {
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 10;
-  max-height: 50px;
-  height: 50px; }
-  .site-header .flex-container-no-wrap {
-    -ms-flex-align: center;
-        align-items: center; }
-  .site-header .container-fluid {
-    padding: 5px 0; }
-
+/* Inahbitent home logo */
 .site-branding img {
   max-height: 33px; }
 
+/* Menus */
 .main-navigation {
   clear: both;
   display: block;
@@ -603,6 +600,49 @@ a {
     .main-navigation a:hover {
       color: #404040; }
 
+.site-header {
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  max-height: 50px;
+  height: 50px; }
+  .site-header .flex-container-no-wrap {
+    -ms-flex-align: center;
+        align-items: center; }
+  .site-header .container-fluid {
+    padding: 5px 0; }
+  .site-header .main-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }
+  .site-header .search-form {
+    display: inline-block; }
+    .site-header .search-form fieldset {
+      padding: 0;
+      border: none;
+      margin-left: 15px; }
+    .site-header .search-form label:before {
+      font-family: FontAwesome;
+      content: "\f002";
+      color: #248A83; }
+    .site-header .search-form label:hover:before {
+      cursor: pointer; }
+    .site-header .search-form input[type=search] {
+      width: 0;
+      border: none;
+      background-color: white;
+      transition: width 0.4s ease-in-out; }
+    .site-header .search-form input[type=search]:focus {
+      width: 200px;
+      outline: none; }
+    .site-header .search-form .search-submit {
+      display: none; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -612,10 +652,9 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
+    display: block; }
+    .main-navigation ul li {
+      padding-left: 15px; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main

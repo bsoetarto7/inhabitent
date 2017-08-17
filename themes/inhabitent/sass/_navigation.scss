@@ -24,33 +24,18 @@ a {
 	}
 }
 
-/* Menus */
-.site-header{
-	border-bottom: 1px solid $color__grey-border;
-	position: fixed;
-	width: 100%;
-	background-color: $color__white-header;
-	z-index: 10;
-	max-height: 50px;
-	height: 50px;
-	.flex-container-no-wrap{
-		align-items: center;
-	}
-	.container-fluid{
-		padding: 5px 0;
-	}
-}
+/* Inahbitent home logo */
 .site-branding{
 	img{
 		max-height: 33px;
 	}
 }
+/* Menus */
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
@@ -118,6 +103,60 @@ a {
 	}
 }
 
+
+.site-header{
+	border-bottom: 1px solid $color__grey-border;
+	position: fixed;
+	width: 100%;
+	background-color: $color__white-header;
+	z-index: 10;
+	max-height: 50px;
+	height: 50px;
+	.flex-container-no-wrap{
+		align-items: center;
+	}
+	.container-fluid{
+		padding: 5px 0;
+	}
+	.main-navigation{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.search-form{
+		display: inline-block;
+		fieldset{
+			padding: 0;
+			border: none;
+			margin-left: 15px;
+		}
+		label{
+			&:before{
+				font-family: FontAwesome;
+				content: "\f002";
+				color: $color__green-brand;
+				
+			}
+			&:hover:before{
+				cursor: pointer;
+			}
+		}
+		input[type=search] {
+			width: 0;
+			border: none;
+			background-color: white;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+		input[type=search]:focus {
+				width: 200px;
+				outline: none;
+		}
+		.search-submit{
+			display: none;
+		}
+	}
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -129,8 +168,10 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: flex;
-		justify-content: space-between;
+		display: block;
+		li{
+			padding-left: 15px;
+		}
 	}
 }
 
