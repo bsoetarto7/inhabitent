@@ -20,12 +20,14 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header" role="banner">
 				<div class="container-fluid">
 					<div class="flex-container-no-wrap">
 						<div class="site-branding flex-item-30">
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<a href=<?php echo home_url() ?>><img src=<?php echo get_stylesheet_directory_uri(); ?>/images/inhabitent-logo-tent.svg alt="Inhabitent logo"></a>
+							<a href=<?php echo home_url() ?>>
+								<div class="site-branding-logo"></div>
+							</a>
 						</div><!-- .site-branding -->
 
 						<nav id="site-navigation" class="main-navigation flex-item-70" role="navigation">

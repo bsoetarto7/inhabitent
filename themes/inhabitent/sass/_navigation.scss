@@ -28,6 +28,7 @@ a {
 .site-branding{
 	img{
 		max-height: 33px;
+		display: inline-block;
 	}
 }
 /* Menus */
@@ -118,6 +119,13 @@ a {
 	.container-fluid{
 		padding: 5px 0;
 	}
+	.site-branding-logo{
+		width: 50px;
+		height: 33px;
+		background-image: url('../../images/inhabitent-logo-tent.svg');
+		background-size: cover;
+		background-position: center;
+	}
 	.main-navigation{
 		display: flex;
 		justify-content: flex-end;
@@ -154,6 +162,38 @@ a {
 		}
 		.search-submit{
 			display: none;
+		}
+	}
+}
+.header-inverse{
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	.site-branding-logo{
+		background-image: url('../../images/inhabitent-logo-tent-white.svg');
+	}
+	.main-navigation{
+		a {
+			display: block;
+			text-decoration: none;
+			color: $color__white-text;
+			&:hover{
+				color: $color__orange-brand;
+			}
+		}
+	}
+	.search-form{
+		label{
+			input{
+				color: $color__white-text;
+			}
+			input::placeholder{
+				color: $color__yellow-brand;
+			}
+			&:before{
+				color: $color__white-text;
+				
+			}
 		}
 	}
 }

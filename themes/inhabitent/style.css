@@ -557,7 +557,8 @@ a {
 
 /* Inahbitent home logo */
 .site-branding img {
-  max-height: 33px; }
+  max-height: 33px;
+  display: inline-block; }
 
 /* Menus */
 .main-navigation {
@@ -613,6 +614,12 @@ a {
         align-items: center; }
   .site-header .container-fluid {
     padding: 5px 0; }
+  .site-header .site-branding-logo {
+    width: 50px;
+    height: 33px;
+    background-image: url("../../images/inhabitent-logo-tent.svg");
+    background-size: cover;
+    background-position: center; }
   .site-header .main-navigation {
     display: -ms-flexbox;
     display: flex;
@@ -642,6 +649,29 @@ a {
       outline: none; }
     .site-header .search-form .search-submit {
       display: none; }
+
+.header-inverse {
+  border: none;
+  background-color: transparent;
+  position: absolute; }
+  .header-inverse .site-branding-logo {
+    background-image: url("../../images/inhabitent-logo-tent-white.svg"); }
+  .header-inverse .main-navigation a {
+    display: block;
+    text-decoration: none;
+    color: #fff; }
+    .header-inverse .main-navigation a:hover {
+      color: #d99054; }
+  .header-inverse .search-form label input {
+    color: #fff; }
+  .header-inverse .search-form label input::-webkit-input-placeholder {
+    color: #f0e4d1; }
+  .header-inverse .search-form label input:-ms-input-placeholder {
+    color: #f0e4d1; }
+  .header-inverse .search-form label input::placeholder {
+    color: #f0e4d1; }
+  .header-inverse .search-form label:before {
+    color: #fff; }
 
 /* Small menu. */
 .menu-toggle,
