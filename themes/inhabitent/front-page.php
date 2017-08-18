@@ -15,7 +15,7 @@ get_header(); ?>
 			<section class="container-fluid home-product-terms">
 				<h2 class="text-uppercase text-center">shop stuff</h2>
 				<?php
-					$args = array( 'post_type' => 'product-type');
+					$args = array( 'taxonomy' => 'product-type');
 
 					$product_types = get_terms( $args ); // returns an array of posts
 				?>
@@ -25,7 +25,7 @@ get_header(); ?>
 						<div class="product-term-name">
 							<img src=<?php echo get_stylesheet_directory_uri() . '/images/' . strtolower($product_type->name) .'.svg' ; ?> alt="<?php echo $product_type->name . ' category icon' ?>">
 							<p><?php echo $product_type->description ?></p>
-							<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name . ' Stuff' ?></a>
+							<a class="text-uppercase" href="<?php echo get_term_link($product_type); ?>"><?php echo $product_type->name . ' Stuff' ?></a>
 						</div>
 					</div>
 					<?php endforeach; wp_reset_postdata(); ?>

@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 		<?php query_posts( array( 'post_type' =>'product', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
 		<?php
-			$args = array( 'post_type' => 'product-type');
+			$args = array( 'taxonomy' => 'product-type');
 
 			$product_types = get_terms( $args ); // returns an array of posts
 		?>
@@ -24,7 +24,7 @@ get_header(); ?>
 				<div class="flex-container-no-wrap">
 				<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
 					<div class="flex-item-25 text-center">
-						<a class="text-uppercase" href="<?php echo home_url() ?>/product-type/<?php echo $product_type->slug ?>"><?php echo $product_type->name ?></a>
+						<a class="text-uppercase" href="<?php echo get_term_link($product_type) ?>"><?php echo $product_type->name ?></a>
 					</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 				</div>
