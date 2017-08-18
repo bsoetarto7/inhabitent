@@ -1521,6 +1521,10 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
       width: 20px; }
     .site-footer p .day-of-week {
       font-weight: 700; }
+  .site-footer .footer-social-media .fa {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-right: 10px; }
   .site-footer .site-footer-items {
     padding: 60px 0; }
   .site-footer .footer-items:last-child {

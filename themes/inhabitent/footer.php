@@ -22,6 +22,11 @@
 								<i class="fa fa-phone" aria-hidden="true"></i>
 								<a href="tel:7784567891">778-456-7891</a>
 							</p>
+							<div class="footer-social-media">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							</div>
 						</div>
 						<div class="footer-items flex-item-25">
 							<h2 class="text-uppercase">business hours</h2>
