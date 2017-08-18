@@ -31,6 +31,11 @@ get_header(); ?>
                 'after'  => '</div>',
               ) );
             ?>
+            <div class="social-media-section">
+              <button class="social-media-btn text-uppercase"><i class="fa fa-facebook" aria-hidden="true"></i> like</button>
+              <button class="social-media-btn text-uppercase"><i class="fa fa-twitter" aria-hidden="true"></i> tweet</button>
+              <button class="social-media-btn text-uppercase"><i class="fa fa-pinterest" aria-hidden="true"></i> pin</button>
+            </div>
           </div>
         </section>
       </article>
