@@ -1460,13 +1460,13 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
       color: #808080; }
 
 /* ---------- 404 Section ----------*/
-.error404 .site-content fieldset {
+.error404 .site-content fieldset, .search .site-content fieldset {
   margin: 0 0 50px 0;
   padding: 0;
   border: none; }
-  .error404 .site-content fieldset button {
+  .error404 .site-content fieldset button, .search .site-content fieldset button {
     display: none; }
-  .error404 .site-content fieldset .icon-search {
+  .error404 .site-content fieldset .icon-search, .search .site-content fieldset .icon-search {
     display: none; }
 
 .search .page-header {
