@@ -20,12 +20,11 @@ get_header(); ?>
           <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
           <p class="entry-price"><?php echo CFS()->get( 'price' ); ?></p>
           <?php the_content(); ?>
-          <?php
-            wp_link_pages( array(
-              'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-              'after'  => '</div>',
-            ) );
-          ?>
+          <div class="social-media-section">
+            <button class="social-media-btn text-uppercase"><i class="fa fa-facebook" aria-hidden="true"></i> like</button>
+            <button class="social-media-btn text-uppercase"><i class="fa fa-twitter" aria-hidden="true"></i> tweet</button>
+            <button class="social-media-btn text-uppercase"><i class="fa fa-pinterest" aria-hidden="true"></i> pin</button>
+          </div>
         </section>
       </article>
 		<?php endwhile; ?>

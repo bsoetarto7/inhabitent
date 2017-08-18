@@ -30,4 +30,9 @@
 	<footer class="entry-footer">
 		<?php inhabitent_entry_footer(); ?>
 	</footer>
+	<div class="social-media-section">
+		<button class="social-media-btn text-uppercase"><i class="fa fa-facebook" aria-hidden="true"></i> like</button>
+		<button class="social-media-btn text-uppercase"><i class="fa fa-twitter" aria-hidden="true"></i> tweet</button>
+		<button class="social-media-btn text-uppercase"><i class="fa fa-pinterest" aria-hidden="true"></i> pin</button>
+	</div>
 </article>

@@ -635,7 +635,7 @@ a {
       margin-left: 15px; }
     .site-header .search-form label .fa {
       color: #248A83;
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
       .site-header .search-form label .fa:hover {
         cursor: pointer; }
     .site-header .search-form .search-field {
@@ -937,6 +937,22 @@ body iframe {
   width: 100%;
   height: 300px; }
 
+body .social-media-btn {
+  background-color: transparent;
+  border: 1px solid #2f1339;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  padding: 15px 20px;
+  font-size: 1rem;
+  margin-right: 10px; }
+  body .social-media-btn .fa {
+    font-size: 1.1rem; }
+  body .social-media-btn:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #248A83; }
+
 body:not(.home):not(.page-template-about):not(.single-product):not(.single-adventure):not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .site-content {
   display: -ms-flexbox;
   display: flex;
@@ -1000,14 +1016,15 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
     color: #fff;
     border: 1px solid #248A83; }
 
-.blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a {
-  color: #248A83;
-  text-decoration: none; }
-  .blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover {
-    color: #404040; }
-
-.blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span {
-  margin-right: 20px; }
+.blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer {
+  margin-bottom: 30px; }
+  .blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a {
+    color: #248A83;
+    text-decoration: none; }
+    .blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer a:hover {
+      color: #404040; }
+  .blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .entry-footer span {
+    margin-right: 20px; }
 
 .blog .post, .archive .post {
   margin-bottom: 80px; }
@@ -1380,33 +1397,31 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
   margin: 0; }
 
 /* ---------- Comment Section ----------*/
-.comments-area label {
-  text-transform: uppercase; }
-
-.comments-area a {
-  color: #248A83;
-  text-decoration: none; }
-  .comments-area a:hover {
-    color: #404040; }
-
-.comments-area .comment-form-author {
-  margin-right: 1%; }
-
-.comments-area .comment-form-author, .comments-area .comment-form-email {
-  width: 49%;
-  display: inline-block; }
-  .comments-area .comment-form-author label, .comments-area .comment-form-email label {
-    display: block; }
-  .comments-area .comment-form-author input, .comments-area .comment-form-email input {
-    width: 100%; }
-
-.comments-area .comment-form-url {
-  width: 100%;
-  display: inline-block; }
-  .comments-area .comment-form-url label {
-    display: block; }
-  .comments-area .comment-form-url input {
-    width: 100%; }
+.comments-area {
+  margin-top: 60px; }
+  .comments-area label {
+    text-transform: uppercase; }
+  .comments-area a {
+    color: #248A83;
+    text-decoration: none; }
+    .comments-area a:hover {
+      color: #404040; }
+  .comments-area .comment-form-author {
+    margin-right: 1%; }
+  .comments-area .comment-form-author, .comments-area .comment-form-email {
+    width: 49%;
+    display: inline-block; }
+    .comments-area .comment-form-author label, .comments-area .comment-form-email label {
+      display: block; }
+    .comments-area .comment-form-author input, .comments-area .comment-form-email input {
+      width: 100%; }
+  .comments-area .comment-form-url {
+    width: 100%;
+    display: inline-block; }
+    .comments-area .comment-form-url label {
+      display: block; }
+    .comments-area .comment-form-url input {
+      width: 100%; }
 
 /* ---------- 404 Section ----------*/
 .error404 fieldset {

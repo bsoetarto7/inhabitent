@@ -27,6 +27,24 @@ body{
     width: 100%;
     height: 300px;
   }
+  .social-media-btn{
+    background-color: transparent;
+    border:1px solid $color__purple-brand;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    .fa{
+      font-size: 1.1rem;
+    }
+    &:hover{
+      background-color: $color__green-brand;
+      color: $color__white-text;
+      border:1px solid $color__green-brand;
+    }
+  }
   &:not(.home):not(.page-template-about):not(.single-product):not(.single-adventure):not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure){
     .site-content{
       display: flex;
@@ -101,6 +119,7 @@ body{
       }
     }
     .entry-footer{
+      margin-bottom: 30px;
       a{
         color:$color__green-brand;
         text-decoration: none;
@@ -546,6 +565,7 @@ body{
 
 /* ---------- Comment Section ----------*/
 .comments-area{
+  margin-top: 60px;
   label{
     text-transform: uppercase;
   }
