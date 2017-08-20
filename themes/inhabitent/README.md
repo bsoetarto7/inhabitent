@@ -5,7 +5,6 @@ A WordPress starter theme for the Inhabitent site.
 ### Tech
 
 Inhabitent theme uses the following:
-* Wordpress CMS
 * PHP
 * HTML
 * CSS
