@@ -66,7 +66,7 @@ body{
   }
 }
 
-/* ---------- Journal, Single post, Archive and error404 Section ----------*/
+/* ---------- Journal, Single post, Archive and error404 ----------*/
 .blog,.single-post,.archive,.error404{
   &:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure){
     .content-area{
