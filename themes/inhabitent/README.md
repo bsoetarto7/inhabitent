@@ -1,14 +1,35 @@
-# RED Starter
+# Inhabitent
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress starter theme for the Inhabitent site.
+
+### Tech
+
+Inhabitent theme uses the following:
+* Wordpress CMS
+* PHP
+* HTML
+* CSS
+* SASS/SCSS
+* Javascript
+* jQuery
+* Gulp 
 
 ## Installation
+
+Inhabitent site requires [Node.js](https://nodejs.org/) v4+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ npm install -d
+$ gulp
+```
 
 ### 1. Download me (don't clone me!)
 
 Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter` directory
+### 2. Rename the `Inhabitent` directory
 
 Make sure that the theme directory name is project appropriate!
 
