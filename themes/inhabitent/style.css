@@ -1071,6 +1071,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
 .blog .post, .archive .post {
   margin-bottom: 80px; }
 
+/* ---------- Page----------*/
 .page:not(.home):not(.page-template-about) .content-area {
   padding: 40px 40px 40px 0;
   -ms-flex: 0 0 70%;
