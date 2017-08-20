@@ -540,6 +540,10 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+textarea, input {
+  background-color: #f4f4f4;
+  resize: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -867,6 +871,10 @@ iframe,
 object {
   max-width: 100%; }
 
+iframe {
+  width: 100%;
+  height: 300px; }
+
 /* Captions */
 .wp-caption {
   margin-bottom: 1.5rem;
@@ -917,9 +925,42 @@ object {
 body .site-content {
   overflow: auto; }
 
-body textarea, body input {
-  background-color: #f4f4f4;
-  resize: none; }
+body .inha-green-btn {
+  background-color: #248A83;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none; }
+  body .inha-green-btn:hover {
+    background-color: #19625d; }
+
+body .inha-transparent-black-border-btn {
+  color: #404040;
+  text-decoration: none;
+  font-family: "Novecento Sans", serif;
+  font-size: 1rem;
+  padding: 5px 20px;
+  font-weight: 400;
+  border: 1px solid black;
+  display: inline-block; }
+  body .inha-transparent-black-border-btn:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #248A83; }
+
+body .inha-transparent-white-border-btn {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Novecento Sans", serif;
+  font-size: 1rem;
+  padding: 5px 20px;
+  font-weight: 400;
+  border: 1px solid white;
+  display: inline-block; }
+  body .inha-transparent-white-border-btn:hover {
+    background-color: #248A83;
+    color: #fff;
+    border: 1px solid #248A83; }
 
 body input[type=submit] {
   background: #248A83;
@@ -937,10 +978,6 @@ body input[type=submit] {
     text-shadow: none;
     box-shadow: none;
     background-color: #19625d; }
-
-body iframe {
-  width: 100%;
-  height: 300px; }
 
 body .social-media-btn {
   background-color: transparent;
@@ -972,7 +1009,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
       flex: 0 0 30%;
   border-left: 1px solid #e1e1e1; }
 
-/* ---------- Journal, Single post, Archive and error404 Section ----------*/
+/* ---------- Journal, Single post, Archive and error404 ----------*/
 .blog:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .content-area, .single-post:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .content-area, .archive:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .content-area, .error404:not(.post-type-archive-product):not(.tax-product-type):not(.post-type-archive-adventure) .content-area {
   padding: 40px 40px 40px 0;
   -ms-flex: 0 0 70%;
@@ -1070,6 +1107,8 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
     font-size: 1.2rem; }
     .post-type-archive-product .page-header a:hover, .tax-product-type .page-header a:hover, .post-type-archive-adventure .page-header a:hover {
       color: #404040; }
+  .post-type-archive-product .page-header p, .tax-product-type .page-header p, .post-type-archive-adventure .page-header p {
+    margin-bottom: 0; }
 
 .post-type-archive-product .flex-item-25, .tax-product-type .flex-item-25, .post-type-archive-adventure .flex-item-25 {
   max-width: 25%; }
@@ -1108,6 +1147,9 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
       background-color: #fff;
       padding-left: 2px; }
 
+.post-type-archive-adventure .page-header h1 {
+  margin-bottom: 0; }
+
 /* ---------- Adventure archive/single Section ----------*/
 .post-type-archive-adventure .adventure-journal {
   position: relative;
@@ -1134,20 +1176,6 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
     .post-type-archive-adventure h2 a:hover {
       color: #d99054; }
 
-.post-type-archive-adventure .entry-button {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Novecento Sans", serif;
-  font-size: 1rem;
-  padding: 5px 20px;
-  font-weight: 400;
-  border: 1px solid white;
-  display: inline-block; }
-  .post-type-archive-adventure .entry-button:hover {
-    background-color: #248A83;
-    color: #fff;
-    border: 1px solid #248A83; }
-
 /* ---------- Home Section ----------*/
 .home .home-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1165,7 +1193,8 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
   .home .home-product-terms h2, .home .home-journal-post h2, .home .home-adventure-post h2 {
     font-size: 2.5rem;
     font-weight: 300;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    color: #2f1339; }
 
 .home .home-product-terms .product-term-name {
   text-align: center;
@@ -1176,17 +1205,8 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
   .home .home-product-terms .product-term-name img {
     max-width: 70px;
     margin: 0 auto; }
-  .home .home-product-terms .product-term-name a {
-    background-color: #248A83;
-    padding: 10px 15px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none; }
-    .home .home-product-terms .product-term-name a:hover {
-      background-color: #19625d; }
   .home .home-product-terms .product-term-name:hover {
-    border-color: #d99054;
-    cursor: pointer; }
+    border-color: #d99054; }
 
 .home .home-journal-post h3 {
   margin: 10px 0 30px 0; }
@@ -1220,20 +1240,6 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
     margin: 0 0 10px 0;
     font-size: 0.8rem; }
 
-.home .home-journal-post .entry-button {
-  color: #404040;
-  text-decoration: none;
-  font-family: "Novecento Sans", serif;
-  font-size: 1rem;
-  padding: 5px 20px;
-  font-weight: 400;
-  border: 1px solid black;
-  display: inline-block; }
-  .home .home-journal-post .entry-button:hover {
-    background-color: #248A83;
-    color: #fff;
-    border: 1px solid #248A83; }
-
 .home .home-adventure-post .journal-grid-container {
   display: -ms-grid;
   display: grid;
@@ -1251,25 +1257,12 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
 
 .home .home-adventure-post .adventure-thumbnail {
   position: relative; }
-  .home .home-adventure-post .adventure-thumbnail a {
+  .home .home-adventure-post .adventure-thumbnail .entry-title a {
     color: #fff;
     text-decoration: none;
     font-family: "Novecento Sans", serif; }
-    .home .home-adventure-post .adventure-thumbnail a:hover {
+    .home .home-adventure-post .adventure-thumbnail .entry-title a:hover {
       color: #d99054; }
-  .home .home-adventure-post .adventure-thumbnail .entry-button {
-    color: #fff;
-    text-decoration: none;
-    font-family: "Novecento Sans", serif;
-    font-size: 1rem;
-    padding: 5px 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    display: inline-block; }
-    .home .home-adventure-post .adventure-thumbnail .entry-button:hover {
-      background-color: #248A83;
-      color: #fff;
-      border: 1px solid #248A83; }
 
 .home .home-adventure-post .journal-header {
   position: absolute;
@@ -1318,19 +1311,10 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
     object-fit: cover;
     height: 262.5px; }
 
-.home .home-adventure-post .adventure-button {
-  color: #fff;
-  text-decoration: none;
+.home .home-adventure-post .inha-green-btn {
   font-family: "Novecento Sans", serif;
-  font-size: 1.3rem;
-  padding: 5px 20px;
-  margin-top: 20px;
-  font-weight: 400;
-  display: inline-block;
-  background-color: #248A83; }
-  .home .home-adventure-post .adventure-button:hover {
-    background-color: #19625d;
-    color: #fff; }
+  font-size: 1.1rem;
+  padding: 10px 30px; }
 
 /* ---------- About Section ----------*/
 .page-template-about .custom-hero {
@@ -1469,6 +1453,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.single-adven
   .error404 .site-content fieldset .icon-search, .search .site-content fieldset .icon-search {
     display: none; }
 
+/* ---------- Search Section ----------*/
 .search .page-header {
   overflow: auto;
   border-bottom: 1px solid #e1e1e1; }

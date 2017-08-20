@@ -25,7 +25,7 @@ get_header(); ?>
 						<div class="product-term-name">
 							<img src=<?php echo get_stylesheet_directory_uri() . '/images/' . strtolower($product_type->name) .'.svg' ; ?> alt="<?php echo $product_type->name . ' category icon' ?>">
 							<p><?php echo $product_type->description ?></p>
-							<a class="text-uppercase" href="<?php echo get_term_link($product_type); ?>"><?php echo $product_type->name . ' Stuff' ?></a>
+							<a class="inha-green-btn text-uppercase" href="<?php echo get_term_link($product_type); ?>"><?php echo $product_type->name . ' Stuff' ?></a>
 						</div>
 					</div>
 					<?php endforeach; wp_reset_postdata(); ?>
@@ -52,7 +52,7 @@ get_header(); ?>
 								<div class="entry-title">
 									<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 								</div>
-								<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read entry</a>
+								<a href=<?php echo get_post_permalink() ?> class="inha-transparent-black-border-btn text-uppercase">read entry</a>
 							</header>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
@@ -75,13 +75,13 @@ get_header(); ?>
 									<div class="entry-title">
 										<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 									</div>
-									<a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read more</a>
+									<a href=<?php echo get_post_permalink() ?> class="inha-transparent-white-border-btn text-uppercase">read more</a>
 								</div>
 							</div>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-				<a href=<?php echo home_url().'/adventure' ?> class="adventure-button text-uppercase">more adventure</a>
+				<a href=<?php echo home_url().'/adventure' ?> class="inha-green-btn text-uppercase">more adventure</a>
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->

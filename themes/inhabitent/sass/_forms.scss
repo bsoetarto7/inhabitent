@@ -60,3 +60,9 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+textarea,input{
+	background-color: $color__grey-textarea;
+	resize: none;
+}
+

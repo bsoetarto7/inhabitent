@@ -28,7 +28,7 @@ get_header(); ?>
             <?php endif; ?>
             <div class="journal-title">
               <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-              <a href=<?php echo get_post_permalink() ?> class="entry-button text-uppercase">read more</a>
+              <a href=<?php echo get_post_permalink() ?> class="inha-transparent-white-border-btn text-uppercase">read more</a>
             </div>
           </div>
         </div>

@@ -7,9 +7,45 @@ body{
   .site-content{
     overflow: auto;
   }
-  textarea,input{
-    background-color: $color__grey-textarea;
-    resize: none;
+  .inha-green-btn{
+    background-color: $color__green-brand;
+    padding: 10px 15px;
+    display: inline-block;
+    color: $color__white-text;
+    text-decoration: none;
+    &:hover{
+      background-color: darken($color__green-brand,10%);
+    }
+  }
+  .inha-transparent-black-border-btn{
+    color:$color__text-main;
+    text-decoration: none;
+    font-family: $font__header;
+    font-size: 1rem;
+    padding: 5px 20px;
+    font-weight: 400;
+    border: 1px solid black;
+    display: inline-block;
+    &:hover{
+      background-color: $color__green-brand;
+      color: $color__white-text;
+      border: 1px solid $color__green-brand;
+    }
+  }
+  .inha-transparent-white-border-btn{
+    color:$color__white-text;
+    text-decoration: none;
+    font-family: $font__header;
+    font-size: 1rem;
+    padding: 5px 20px;
+    font-weight: 400;
+    border: 1px solid white;
+    display: inline-block;
+    &:hover{
+      background-color: $color__green-brand;
+      color: $color__white-text;
+      border: 1px solid $color__green-brand;
+    }
   }
   input[type=submit]{
     background: $color__green-brand;
@@ -28,10 +64,6 @@ body{
       box-shadow: none;
       background-color: darken($color__green-brand,10%);
     }
-  }
-  iframe{
-    width: 100%;
-    height: 300px;
   }
   .social-media-btn{
     background-color: transparent;
@@ -145,6 +177,7 @@ body{
     margin-bottom: 80px;
   }
 }
+
 .page{
   &:not(.home):not(.page-template-about){
     .content-area{
@@ -193,6 +226,9 @@ body{
         color:$color__text-main;
       }
     }
+    p{
+      margin-bottom: 0;
+    }
   }
   .flex-item-25{
     max-width: 25%;
@@ -237,6 +273,14 @@ body{
   }
 }
 
+.post-type-archive-adventure{
+  .page-header{
+    h1{
+      margin-bottom: 0;
+    }
+  }
+}
+
 /* ---------- Adventure archive/single Section ----------*/
 .post-type-archive-adventure{
   .adventure-journal{
@@ -266,21 +310,6 @@ body{
       }
     }
   }
-  .entry-button{
-    color:$color__white-text;
-    text-decoration: none;
-    font-family: $font__header;
-    font-size: 1rem;
-    padding: 5px 20px;
-    font-weight: 400;
-    border: 1px solid white;
-    display: inline-block;
-    &:hover{
-      background-color: $color__green-brand;
-      color: $color__white-text;
-      border: 1px solid $color__green-brand;
-    }
-  }
 }
 
 /* ---------- Home Section ----------*/
@@ -299,6 +328,7 @@ body{
       font-size: 2.5rem;
       font-weight: 300;
       margin-bottom: 60px;
+      color:$color__purple-brand;
     }
   }
   .home-product-terms{
@@ -312,19 +342,8 @@ body{
         max-width: 70px;
         margin: 0 auto;
       }
-      a{
-        background-color: $color__green-brand;
-        padding: 10px 15px;
-        display: inline-block;
-        color: $color__white-text;
-        text-decoration: none;
-        &:hover{
-          background-color: darken($color__green-brand,10%);
-        }
-      }
       &:hover{
         border-color: $color__orange-brand;
-        cursor: pointer;
       }
     }
   }
@@ -367,21 +386,6 @@ body{
         }
       }
     }
-    .entry-button{
-      color:$color__text-main;
-      text-decoration: none;
-      font-family: $font__header;
-      font-size: 1rem;
-      padding: 5px 20px;
-      font-weight: 400;
-      border: 1px solid black;
-      display: inline-block;
-      &:hover{
-        background-color: $color__green-brand;
-        color: $color__white-text;
-        border: 1px solid $color__green-brand;
-      }
-    }
   }
   .home-adventure-post{
     .journal-grid-container{
@@ -399,27 +403,14 @@ body{
     }
     .adventure-thumbnail{
       position: relative;
-      a{
-        color:$color__white-text;
-        text-decoration: none;
-        font-family: $font__header;
-        &:hover{
-          color:$color__orange-brand;
-        }
-      }
-      .entry-button{
-        color:$color__white-text;
-        text-decoration: none;
-        font-family: $font__header;
-        font-size: 1rem;
-        padding: 5px 20px;
-        font-weight: 400;
-        border: 1px solid white;
-        display: inline-block;
-        &:hover{
-          background-color: $color__green-brand;
-          color: $color__white-text;
-          border: 1px solid $color__green-brand;
+      .entry-title{
+        a{
+          color:$color__white-text;
+          text-decoration: none;
+          font-family: $font__header;
+          &:hover{
+            color:$color__orange-brand;
+          }
         }
       }
     }
@@ -476,20 +467,10 @@ body{
         height: 262.5px;
       }      
     }
-    .adventure-button{
-      color:$color__white-text;
-      text-decoration: none;
+    .inha-green-btn{
       font-family: $font__header;
-      font-size: 1.3rem;
-      padding: 5px 20px;
-      margin-top: 20px;
-      font-weight: 400;
-      display: inline-block;
-      background-color: $color__green-brand;
-      &:hover{
-        background-color: darken($color__green-brand,10%);
-        color: $color__white-text;
-      }
+      font-size: 1.1rem;
+      padding: 10px 30px;
     }
   }
 }
@@ -664,6 +645,7 @@ body{
   }
 }
 
+/* ---------- Search Section ----------*/
 .search{
   .page-header{
     overflow: auto;
