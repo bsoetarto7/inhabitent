@@ -480,8 +480,9 @@ body{
 .page-template-about{
   .custom-hero{
     height: 100vh;
+    background-color: $color__green-brand;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     align-items: center;
   }
   .entry-title{
