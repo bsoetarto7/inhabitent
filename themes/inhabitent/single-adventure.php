@@ -42,4 +42,5 @@ get_header(); ?>
     <?php endwhile; ?>
 		</main>
 	</div>
+  
 <?php get_footer(); ?>

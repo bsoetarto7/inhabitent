@@ -12,8 +12,7 @@ get_header(); ?>
 		<?php query_posts( array( 'post_type' =>'product', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
 		<?php
 			$args = array( 'taxonomy' => 'product-type');
-
-			$product_types = get_terms( $args ); // returns an array of posts
+			$product_types = get_terms( $args );
 		?>
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">
@@ -28,7 +27,7 @@ get_header(); ?>
 					</div>
 				<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-			</header><!-- .page-header -->
+			</header>
 			<section class="flex-container">
 			<?php while ( have_posts() ) : the_post(); ?>
         <div class="flex-item-25">
@@ -42,12 +41,11 @@ get_header(); ?>
 							<span><?php echo CFS()->get( 'price' ); ?></span>
 						</h2>
 					</div>
-					
 				</div>
 			<?php endwhile; ?>
 			</section>
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
+	
 <?php get_footer(); ?>

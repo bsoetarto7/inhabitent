@@ -16,8 +16,7 @@ get_header(); ?>
 				<h2 class="text-uppercase text-center">shop stuff</h2>
 				<?php
 					$args = array( 'taxonomy' => 'product-type');
-
-					$product_types = get_terms( $args ); // returns an array of posts
+					$product_types = get_terms( $args );
 				?>
 				<div class="flex-container-no-wrap">
 					<?php foreach ( $product_types as $product_type ) : setup_postdata( $product_type ); ?>
@@ -83,7 +82,7 @@ get_header(); ?>
 				</div>
 				<a href=<?php echo home_url().'/adventure' ?> class="inha-green-btn text-uppercase">more adventure</a>
 			</section>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_footer(); ?>

@@ -6,9 +6,7 @@
  */
 
 ?>
-
-			</div><!-- #content -->
-
+			</div>
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-footer-items container-fluid">
 					<div class="flex-container-no-wrap">

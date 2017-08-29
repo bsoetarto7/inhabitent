@@ -11,14 +11,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
     <?php query_posts( array( 'post_type' =>'adventure', 'orderby' => 'date', 'order' => 'ASC' ) ); ?>
 		<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title text-center">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
-      
+			</header>
       <section class="flex-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="flex-item-50">
@@ -35,7 +33,7 @@ get_header(); ?>
 			<?php endwhile; ?>
       </section>
 		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
+	
 <?php get_footer(); ?>
